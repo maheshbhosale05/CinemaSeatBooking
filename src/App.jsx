@@ -7,18 +7,18 @@ function App() {
       typeOfSeat={{
         regular: { type: "regular", price: 150, rows: [0, 1, 2] },
         premium: { type: "premium", price: 250, rows: [3, 4, 5] },
-        vip: { type: "vip", price: 350, rows: [6, 7] }
+        vip: { type: "vip", price: 350, rows: [6, 7] },
       }}
       handleSuccussfulBooking={(bookingDetails) => {
         console.log("Booking Successful:", bookingDetails);
       }}
       bookedSeats={[
         { row: 2, seat: 3 },
-        { row: 4, seat: 6 }
+        { row: 4, seat: 6 },
       ]}
       currency="INR"
-      MovieName="Avengers: Endgame"
-      CinemaName="Grand Cinema Hall"
+      movieName="Avengers: Endgame"
+      cinemaName="Grand Cinema Hall"
       subTitle="Experience the epic conclusion"
     />
   );
